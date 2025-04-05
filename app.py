@@ -3,13 +3,14 @@ import streamlit.components.v1 as components
 
 st.set_page_config(page_title="140字書いて投稿するFocusScribe", layout="wide")
 
-# Streamlit全体の背景色をグレーに設定するCSS
+# Streamlitのデフォルトヘッダーを非表示にし、背景色を明るいグレーに統一
 st.markdown(
     """
     <style>
-    .stApp {
-        background-color: #f0f0f0;
-    }
+      header {visibility: hidden;}
+      .stApp {
+          background-color: #f0f0f0;
+      }
     </style>
     """,
     unsafe_allow_html=True,
